@@ -21,7 +21,7 @@ class Depaginator:
         widget = soup.select("ul.pagination li a span.icon-caret-right")
         if widget == []:
             logging.error(f"url: {url} didn't have a pagination widget")
-            pdb.set_trace()
+            return None
         a = widget[0].parent
         href = a.get("href")
         if site_re.match(href):
@@ -47,7 +47,8 @@ def jednostka_url_extractor(url, session):
     soup = BeautifulSoup(page.content, "html.parser")
     elements = soup.select("td.col-md-5 a")
     if elements == []:
-        pdb.set_trace()
+        logging.error(f"{url} - brak jednostek")
+        return
     for a in elements:
         href = a.get("href")
         if href and jednostka_re.match(href):
