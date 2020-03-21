@@ -52,6 +52,7 @@ def jednostka_url_extractor(url, session):
     for a in elements:
         href = a.get("href")
         if href and jednostka_re.match(href):
+            logging.info(href)
             yield href
 
 
