@@ -17,11 +17,20 @@ python get_picture_urls_for_set.py 31337 > sets/31337
 Crawluje zespół danych nr 31337 a następnie w pliku `sets/31337` zapisuje URL-e wszystkich skanów, w formacie który
 potem pozwala na ściągnięcie za pośrednictwem wget.
 
+
+```
+python downloader.py 31337
+```
+
+Tworzy nowy katalog `31337`, o ile nie został stworzony, następnie za pomocą 8 wątków ściąga dane - zapisując je w
+pliku z użyteczną nazwą. Brak obsługi błędów, wyjątki rzucone w wątkach są ignorowane.
+
 ## Gotchas
 
 * Wygląda na to, że cały serwis jest stateful, tj polega na danych zapisanych w sesji, więc URL-e muszą być crawlowane
   w określonym porządku.
 * PR-e mile widziane.
+* Ktoś powinien z tego zrobić torrenty, bo czemu nie?
 
 
 ## Zespoły scrawlowane:
