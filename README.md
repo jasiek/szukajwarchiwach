@@ -32,4 +32,7 @@ potem pozwala na ściągnięcie za pośrednictwem wget.
 * [Spis ludności miasta Krakowa z r. 1900](sets/30909)
 * [Spis ludności miasta Krakowa z r. 1910](sets/30910)
 * [Urząd Zdrowia w Krakowie](sets/30904)
+* [Akta stanu cywilnego Parafii Rzymskokatolickiej w Białym Kościele](sets/31534)
+* [Akta stanu cywilnego Parafii Rzymskokatolickiej w Giebułtowie](sets/34816)
+* [Akta stanu cywilnego Parafii Rzymskokatolickiej w Modlnicy Wielkiej](sets/31540)
 
