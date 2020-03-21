@@ -23,3 +23,13 @@ potem pozwala na ściągnięcie za pośrednictwem wget.
   w określonym porządku.
 * PR-e mile widziane.
 
+
+## Zespoły scrawlowane:
+
+* [Spis ludności miasta Krakowa z r. 1870](sets/30906)
+* [Spis ludności miasta Krakowa z r. 1880](sets/30907)
+* [Spis ludności miasta Krakowa z r. 1890](sets/30908)
+* [Spis ludności miasta Krakowa z r. 1900](sets/30909)
+* [Spis ludności miasta Krakowa z r. 1910](sets/30910)
+* [Urząd Zdrowia w Krakowie](sets/30904)
+

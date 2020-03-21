@@ -1,6 +1,7 @@
 import sys
 import pdb
 import re
+import logging
 import requests
 from bs4 import BeautifulSoup
 
@@ -18,11 +19,13 @@ class Depaginator:
         page = self.s.get(url)
         soup = BeautifulSoup(page.content, "html.parser")
         widget = soup.select("ul.pagination li a span.icon-caret-right")
-        if widget != []:
-            a = widget.parent
-            href = a.get("href")
-            if site_re.match(href):
-                return href
+        if widget == []:
+            logging.error(f"url: {url} didn't have a pagination widget")
+            pdb.set_trace()
+        a = widget[0].parent
+        href = a.get("href")
+        if site_re.match(href):
+            return href
 
     def paginate(self, url):
         yield url
@@ -43,10 +46,13 @@ def jednostka_url_extractor(url, session):
     page = session.get(url)
     soup = BeautifulSoup(page.content, "html.parser")
     elements = soup.select("td.col-md-5 a")
+    if elements == []:
+        pdb.set_trace()
     for a in elements:
         href = a.get("href")
         if href and jednostka_re.match(href):
             yield href
+
 
 # Wyciąga identyfikator zdjęcia, które można pociągnąć przez "API"
 def picture_id_extractor(url, session):
@@ -56,6 +62,7 @@ def picture_id_extractor(url, session):
     for e in elements:
         id = e.get("data-plikid")
         yield id
+
 
 # Wyciąga link ze strony zespołu danych.
 def jednostki_url_extractor(url, session):
