@@ -38,8 +38,8 @@ pliku z użyteczną nazwą. Brak obsługi błędów, wyjątki rzucone w wątkach
 * [Urząd Zdrowia w Krakowie](sets/30904)
 * [Spis ludności miasta Krakowa z r. 1870](sets/30906)
 * [Spis ludności miasta Krakowa z r. 1880](sets/30907)
-* [Spis ludności miasta Krakowa z r. 1890](sets/30908) ([szczegóły](sets/30908.md)) - 
-* [Spis ludności miasta Krakowa z r. 1900](sets/30909)
+* [Spis ludności miasta Krakowa z r. 1890](sets/30908) ([szczegóły](sets/30908.md)) - 38GB
+* [Spis ludności miasta Krakowa z r. 1900](sets/30909) - 15GB
 * [Spis ludności miasta Krakowa z r. 1910](sets/30910)
 * [Akta stanu cywilnego Parafii Rzymskokatolickiej w Białym Kościele](sets/31534) - 832MB
 * [Akta stanu cywilnego Parafii Rzymskokatolickiej w Giebułtowie](sets/34816)
