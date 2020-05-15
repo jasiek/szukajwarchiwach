@@ -44,4 +44,5 @@ pliku z użyteczną nazwą. Brak obsługi błędów, wyjątki rzucone w wątkach
 * [Akta stanu cywilnego Parafii Rzymskokatolickiej w Białym Kościele](sets/31534) - 832MB
 * [Akta stanu cywilnego Parafii Rzymskokatolickiej w Giebułtowie](sets/34816)
 * [Akta stanu cywilnego Parafii Rzymskokatolickiej w Modlnicy Wielkiej](sets/31540) - 6.1GB
+* [Akta Komisji Porządkowej Cywilno-Wojskowej Województwa Krakowskiego](sets/30674)
 
