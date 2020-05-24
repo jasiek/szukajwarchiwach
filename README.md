@@ -35,12 +35,12 @@ pliku z użyteczną nazwą. Brak obsługi błędów, wyjątki rzucone w wątkach
 
 ## Zespoły scrawlowane:
 
-* [Urząd Zdrowia w Krakowie](sets/30904)
+* [Urząd Zdrowia w Krakowie](sets/30904) - 40GB
 * [Spis ludności miasta Krakowa z r. 1870](sets/30906) - 15GB
-* [Spis ludności miasta Krakowa z r. 1880](sets/30907)
+* [Spis ludności miasta Krakowa z r. 1880](sets/30907) - 36G
 * [Spis ludności miasta Krakowa z r. 1890](sets/30908) ([szczegóły](sets/30908.md)) - 38GB
 * [Spis ludności miasta Krakowa z r. 1900](sets/30909) - 15GB
-* [Spis ludności miasta Krakowa z r. 1910](sets/30910)
+* [Spis ludności miasta Krakowa z r. 1910](sets/30910) - 22GB
 * [Akta stanu cywilnego Parafii Rzymskokatolickiej w Białym Kościele](sets/31534) - 832MB
 * [Akta stanu cywilnego Parafii Rzymskokatolickiej w Giebułtowie](sets/34816) - 2.7GB
 * [Akta stanu cywilnego Parafii Rzymskokatolickiej w Modlnicy Wielkiej](sets/31540) - 6.1GB
