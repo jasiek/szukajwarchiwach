@@ -45,8 +45,7 @@ pliku z użyteczną nazwą. Brak obsługi błędów, wyjątki rzucone w wątkach
 * [Akta stanu cywilnego Parafii Rzymskokatolickiej w Giebułtowie](sets/34816) - 2.7GB
 * [Akta stanu cywilnego Parafii Rzymskokatolickiej w Modlnicy Wielkiej](sets/31540) - 6.1GB
 * [Akta Komisji Porządkowej Cywilno-Wojskowej Województwa Krakowskiego](sets/30674) - 15GB
-* [Księgi Ziemskie Krakowskie](sets/30638)
-* [Archiwum Miasta Kleparza](sets/30843)
-* [Akta stanu cywilnego Parafii Rzymskokatolickiej św. Szczepana w Krakowie](sets/31527)
-* [Akta stanu cywilnego Parafii Rzymskokatolickiej w Bolechowicach](sets/31533)
+* [Księgi Ziemskie Krakowskie](sets/30638) - 300GB (!)
+* [Archiwum Miasta Kleparza](sets/30843) - 42GB
+* [Akta stanu cywilnego Parafii Rzymskokatolickiej w Bolechowicach](sets/31533) - 6.8GB
 
