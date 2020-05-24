@@ -38,7 +38,8 @@ if __name__ == "__main__":
 
     if fetched_ids != to_fetch_ids:
         print("missing files: ")
-        print(to_fetch_ids - fetched_ids)
+        for i in (to_fetch_ids - fetched_ids):
+            print(i)
         exit(1)
 
     for f in fetched_filenames:
