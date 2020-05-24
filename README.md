@@ -42,8 +42,11 @@ pliku z użyteczną nazwą. Brak obsługi błędów, wyjątki rzucone w wątkach
 * [Spis ludności miasta Krakowa z r. 1900](sets/30909) - 15GB
 * [Spis ludności miasta Krakowa z r. 1910](sets/30910)
 * [Akta stanu cywilnego Parafii Rzymskokatolickiej w Białym Kościele](sets/31534) - 832MB
-* [Akta stanu cywilnego Parafii Rzymskokatolickiej w Giebułtowie](sets/34816)
+* [Akta stanu cywilnego Parafii Rzymskokatolickiej w Giebułtowie](sets/34816) - 2.7GB
 * [Akta stanu cywilnego Parafii Rzymskokatolickiej w Modlnicy Wielkiej](sets/31540) - 6.1GB
 * [Akta Komisji Porządkowej Cywilno-Wojskowej Województwa Krakowskiego](sets/30674) - 15GB
-
+* [Księgi Ziemskie Krakowskie](sets/30638)
+* [Archiwum Miasta Kleparza](sets/30843)
+* [Akta stanu cywilnego Parafii Rzymskokatolickiej św. Szczepana w Krakowie](sets/31527)
+* [Akta stanu cywilnego Parafii Rzymskokatolickiej w Bolechowicach](sets/31533)
 
