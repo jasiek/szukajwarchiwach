@@ -25,6 +25,15 @@ python downloader.py 31337
 Tworzy nowy katalog `31337`, o ile nie został stworzony, następnie za pomocą 8 wątków ściąga dane - zapisując je w
 pliku z użyteczną nazwą. Brak obsługi błędów, wyjątki rzucone w wątkach są ignorowane.
 
+
+Aby sprawdzić czy wszystkie pliki się ściągnęły, oraz czy nie są uszkodzone (są poprawnymi plikami JPEG), należy uruchomić:
+
+
+```
+python quality_control.py 31337
+```
+
+
 ## Gotchas
 
 * Wygląda na to, że cały serwis jest stateful, tj polega na danych zapisanych w sesji, więc URL-e muszą być crawlowane
