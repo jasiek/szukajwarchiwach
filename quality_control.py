@@ -36,10 +36,14 @@ if __name__ == "__main__":
     for i in fetched_ids:
         int(i)
 
-    if fetched_ids != to_fetch_ids:
+    missing = to_fetch_ids - fetched_ids
+        
+    if len(missing) > 0:
         print("missing files: ")
-        for i in (to_fetch_ids - fetched_ids):
+        for i in missing:
             print(i)
+        # grep -E <output> sets/<id> > sets/1
+        print('|'.join(missing))
         exit(1)
 
     for f in fetched_filenames:
