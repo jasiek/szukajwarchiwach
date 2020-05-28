@@ -44,17 +44,17 @@ python quality_control.py 31337
 
 ## Zespoły scrawlowane:
 
-* [Urząd Zdrowia w Krakowie](sets/30904) - 40GB
-* [Spis ludności miasta Krakowa z r. 1870](sets/30906) - 15GB
-* [Spis ludności miasta Krakowa z r. 1880](sets/30907) - 36G
-* [Spis ludności miasta Krakowa z r. 1890](sets/30908) ([szczegóły](sets/30908.md)) - 38GB
-* [Spis ludności miasta Krakowa z r. 1900](sets/30909) - 15GB
-* [Spis ludności miasta Krakowa z r. 1910](sets/30910) - 22GB
-* [Akta stanu cywilnego Parafii Rzymskokatolickiej w Białym Kościele](sets/31534) - 832MB
-* [Akta stanu cywilnego Parafii Rzymskokatolickiej w Giebułtowie](sets/34816) - 2.7GB
-* [Akta stanu cywilnego Parafii Rzymskokatolickiej w Modlnicy Wielkiej](sets/31540) - 6.1GB
-* [Akta Komisji Porządkowej Cywilno-Wojskowej Województwa Krakowskiego](sets/30674) - 15GB
-* [Księgi Ziemskie Krakowskie](sets/30638) - 300GB (!)
-* [Archiwum Miasta Kleparza](sets/30843) - 42GB
-* [Akta stanu cywilnego Parafii Rzymskokatolickiej w Bolechowicach](sets/31533) - 6.8GB
+* [Urząd Zdrowia w Krakowie](https://www.szukajwarchiwach.gov.pl/en/zespol/-/zespol/30904) - 40GB [lista plików](sets/30904)
+* [Spis ludności miasta Krakowa z r. 1870](https://www.szukajwarchiwach.gov.pl/en/zespol/-/zespol/30906) - 15GB [lista plików](sets/30906)
+* [Spis ludności miasta Krakowa z r. 1880](https://www.szukajwarchiwach.gov.pl/en/zespol/-/zespol/30907) - 36G [lista plików](sets/30907)
+* [Spis ludności miasta Krakowa z r. 1890](https://www.szukajwarchiwach.gov.pl/en/zespol/-/zespol/30908) ([szczegóły](sets/30908.md)) - 38GB [lista plików](sets/30908)
+* [Spis ludności miasta Krakowa z r. 1900](https://www.szukajwarchiwach.gov.pl/en/zespol/-/zespol/30909) - 15GB [lista plików](sets/30909)
+* [Spis ludności miasta Krakowa z r. 1910](https://www.szukajwarchiwach.gov.pl/en/zespol/-/zespol/30910) - 22GB [lista plików](sets/30910)
+* [Akta stanu cywilnego Parafii Rzymskokatolickiej w Białym Kościele](https://www.szukajwarchiwach.gov.pl/en/zespol/-/zespol/31534) - 832MB [lista plików](sets/31534)
+* [Akta stanu cywilnego Parafii Rzymskokatolickiej w Giebułtowie](https://www.szukajwarchiwach.gov.pl/en/zespol/-/zespol/34816) - 2.7GB [lista plików](sets/34816)
+* [Akta stanu cywilnego Parafii Rzymskokatolickiej w Modlnicy Wielkiej](https://www.szukajwarchiwach.gov.pl/en/zespol/-/zespol/31540) - 6.1GB [lista plików](sets/31540)
+* [Akta Komisji Porządkowej Cywilno-Wojskowej Województwa Krakowskiego](https://www.szukajwarchiwach.gov.pl/en/zespol/-/zespol/30674) - 15GB [lista plików](sets/30674)
+* [Księgi Ziemskie Krakowskie](https://www.szukajwarchiwach.gov.pl/en/zespol/-/zespol/30638) - 300GB (!) [lista plików](sets/30638)
+* [Archiwum Miasta Kleparza](https://www.szukajwarchiwach.gov.pl/en/zespol/-/zespol/30843) - 42GB [lista plików](sets/30843)
+* [Akta stanu cywilnego Parafii Rzymskokatolickiej w Bolechowicach](https://www.szukajwarchiwach.gov.pl/en/zespol/-/zespol/31533) - 6.8GB [lista plików](31533)
 
