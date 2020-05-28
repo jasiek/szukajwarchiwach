@@ -51,6 +51,20 @@ def jednostka_url_extractor(url, session):
             logging.info(href)
             yield href
 
+def serie_url_extractor(url, session):
+    page = session.get(url)
+    soup = BeautifulSoup(page.content, "html.parser")
+    elements = soup.select(".odsylacze a.btn[href]")
+    if elements == []:
+        logging.error(f"{url} - brak linka do serii")
+        return
+    for a in elements:
+        if a.text.strip().startswith("Serie"):
+            page = session.get(a.get("href"))
+            soup = BeautifulSoup(page.content, "html.parser")
+            for e in soup.select(".jednostkaObiekty.row td.col-md-5 a"):
+                yield e.get("href")
+            
 
 # Wyciąga identyfikator zdjęcia, które można pociągnąć przez "API"
 def picture_id_extractor(url, session):
@@ -60,6 +74,14 @@ def picture_id_extractor(url, session):
     for e in elements:
         id = e.get("data-plikid")
         yield id
+
+def picture_url_extractor(url, session):
+    page = session.get(url)
+    soup = BeautifulSoup(page.content, "html.parser")
+    elements = soup.select("div.jednostka-skan a.load-photo-slider img")
+    for e in elements:
+        yield e.get("src").replace("_mid", "_max")
+        
 
 
 # Wyciąga link ze strony zespołu danych.

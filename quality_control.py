@@ -31,7 +31,7 @@ if __name__ == "__main__":
     for i in to_fetch_ids:
         int(i)
 
-    fetched_filenames = [f for f in os.listdir('.') if os.path.isfile(f)]
+    fetched_filenames = [f for f in os.listdir('.') if os.path.isfile(f) and f.endswith('.jpg')]
     fetched_ids = set([f.split('_')[-1].split('.')[0] for f in fetched_filenames])
     for i in fetched_ids:
         int(i)
@@ -48,4 +48,4 @@ if __name__ == "__main__":
 
     for f in fetched_filenames:
         check(f)
-    
+    print('OK')

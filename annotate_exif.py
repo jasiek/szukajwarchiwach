@@ -28,6 +28,6 @@ if __name__ ==  "__main__":
         futures = [executor.submit(update_tags, f) for f in filenames]
         for f in concurrent.futures.as_completed(futures):
             if f.result != 0:
-                print(f.result()
+                print(f.result())
                 exit(1)
             
