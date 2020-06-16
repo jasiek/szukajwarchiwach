@@ -52,6 +52,7 @@ def jednostka_url_extractor(url, session):
             yield href
 
 def serie_url_extractor(url, session):
+    # Działa na stronie https://www.szukajwarchiwach.gov.pl/zespol/-/zespol/<zespol_id>
     page = session.get(url)
     soup = BeautifulSoup(page.content, "html.parser")
     elements = soup.select(".odsylacze a.btn[href]")

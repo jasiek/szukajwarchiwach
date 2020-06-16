@@ -87,25 +87,38 @@ if __name__ == "__main__":
         print(f"usage: {sys.argv[0]} <id>")
         exit(1)
 
+    def crawl_jednostka(url, session):
+        jednostki = []
+        jednostka_extractor = JednostkaExtractor(session)
+        jednostka = jednostka_extractor.to_dict(ju)
+        jednostki.append(jednostka)
+        jednostka["skany"] = []
+        picture_ids = Depaginator(session).crawl(ju, picture_id_extractor)
+        picture_urls = Depaginator(session).crawl(ju, picture_url_extractor)
+        for id, url in zip(picture_ids, picture_urls):
+            jednostka["skany"].append({"id": id, "url": url})
+        return jednostki
+
     zespol_id = int(sys.argv[1])
     session = requests.Session()
     zespol_extractor = ZespolExtractor(session)
     zespol_dict = zespol_extractor.to_dict(f"https://www.szukajwarchiwach.gov.pl/zespol/-/zespol/{zespol_id}")
     zespol_dict["serie"] = []
     serie_urls = Depaginator(session).crawl(f"https://www.szukajwarchiwach.gov.pl/zespol/-/zespol/{zespol_id}", serie_url_extractor)
-    for su in serie_urls:
-        seria_extractor = SeriaExtractor(session)
-        seria = seria_extractor.to_dict(su)
-        zespol_dict["serie"].append(seria)
-        seria["jednostki"] = []
-        jednostki_urls = Depaginator(session).crawl(seria["url"], jednostka_url_extractor)
-        for ju in jednostki_urls:
-            jednostka_extractor = JednostkaExtractor(session)
-            jednostka = jednostka_extractor.to_dict(ju)
-            seria["jednostki"].append(jednostka)
-            jednostka["skany"] = []
-            picture_ids = Depaginator(session).crawl(ju, picture_id_extractor)
-            picture_urls = Depaginator(session).crawl(ju, picture_url_extractor)
-            for id, url in zip(picture_ids, picture_urls):
-                jednostka["skany"].append({"id": id, "url": url})
+    if serie_urls:
+        for su in serie_urls:
+            seria_extractor = SeriaExtractor(session)
+            seria = seria_extractor.to_dict(su)
+            zespol_dict["serie"].append(seria)
+            seria["jednostki"] = []
+            jednostki_urls = Depaginator(session).crawl(seria["url"], jednostka_url_extractor)
+            for ju in jednostki_urls:
+                seria["jednostki"].append(crawl_jednostka(ju, session))
+        else:
+            zespol_dict["jednostki"] = []
+            url = f"https://www.szukajwarchiwach.gov.pl/zespol?p_p_id=Zespol&p_p_lifecycle=1&p_p_state=normal&p_p_mode=view&_Zespol_javax.portlet.action=zmienWidok&_Zespol_nameofjsp=jednostki&_Zespol_id_zespolu={zespol_id}"
+            jednostki_urls = Depaginator(session).crawl(url, jednostka_url_extractor)
+            for ju in jednostki_urls:
+                zespol_dict["jednostki"].append(crawl_jednostka(ju, session))
+            
     print(json.dumps(zespol_dict))
