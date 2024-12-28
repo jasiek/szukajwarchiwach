@@ -3,7 +3,7 @@ import logging
 from bs4 import BeautifulSoup
 
 jednostka_re = re.compile(
-    "^https://www.szukajwarchiwach.gov.pl/jednostka/-/jednostka/\d+"
+    "^https://www.szukajwarchiwach.gov.pl/jednostka/-/jednostka/\\d+"
 )
 site_re = re.compile("^https://www.szukajwarchiwach.gov.pl/")
 
