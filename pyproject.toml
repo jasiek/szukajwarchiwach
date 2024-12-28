@@ -4,10 +4,11 @@ version = "0.1.0"
 description = ""
 authors = ["Jan Szumiec <jan.szumiec@gmail.com>"]
 license = "MIT"
+package-mode = false
 
 [tool.poetry.dependencies]
-python = "^3.7"
-pillow = "^7.1.2"
+python = "^3.12"
+pillow = "^11"
 exif = "^0.8.5"
 
 [tool.poetry.dev-dependencies]
@@ -17,3 +18,7 @@ beautifulsoup4 = "^4.8.2"
 [build-system]
 requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"
+
+[build-system.config-settings]
+CFLAGS="-I/opt/homebrew/include"
+LDFLAGS="-L/opt/homebrew/lib"
